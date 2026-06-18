@@ -3,102 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/228/228770.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Newsletter</title>
+    <title>Document</title>
   </head>
-
   <body>
-    <!-- Carrousel Principal (Davi) -->
+    <header id="header">
+      <!-- Menu Desktop -->
+      <nav class="menu-desktop">
+        <ul class="menu menu-principal">
+          <li class="menu-item">
+            <a href="#home" class="menu-link active">
+              <span class="menu-text">HOME</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#projetos" class="menu-link">
+              <span class="menu-text">SHOWS EM DESTAQUE</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#sobre" class="menu-link">
+              <span class="menu-text">QUEM SOMOS NÓS?</span>
+            </a>
+          </li>
+        </ul>
+        <form class="search-box">
+          <input
+            type="text"
+            placeholder="Pesquisar shows..."
+            class="search-input"
+          />
+          <button type="submit" class="search-btn">🔍</button>
+        </form>
+      </nav>
+    </header>
 
-    <div class="ticket-carousel">
-      <input type="radio" name="t" id="t1" checked />
-      <input type="radio" name="t" id="t2" />
-      <input type="radio" name="t" id="t3" />
+<section class="reviews">
+  <h3>O QUE NOSSOS USUÁRIOS DIZEM</h3>
 
-      <div class="ticket">
-        <div class="ticket-left">
-          <div class="vertical-text">GARANTA O SEU</div>
-        </div>
+  <div class="review">
+    <h3>João Silva ⭐⭐⭐⭐⭐</h3>
+    <p>
+      O site é muito fácil de usar e encontro shows rapidamente. O design é
+      bonito e as informações são bem organizadas.
+    </p>
+  </div>
 
-        <div class="ticket-right">
-          <div class="slides">
-            <div class="slide s1">🎤 Roberto Carlos</div>
-            <div class="slide s2">🔥 Eminem Live</div>
-            <div class="slide s3">🎸 Linkin Park</div>
-          </div>
-
-          <div class="nav nav1">
-            <label for="t3">‹</label>
-            <label for="t2">›</label>
-          </div>
-
-          <div class="nav nav2">
-            <label for="t1">‹</label>
-            <label for="t3">›</label>
-          </div>
-
-          <div class="nav nav3">
-            <label for="t2">‹</label>
-            <label for="t1">›</label>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Newsletter (Alex)-->
-
-    <div class="newsletter-container">
-      <i>
-        <h1 class="newsletter-title">FESTIVAL MUSIC <span>PROJECT</span></h1>
-      </i>
-
-      <p class="newsletter-subtitle">
-        Receba conteúdos exclusivos, dicas semanais e novidades direto.
-      </p>
-
-      <form
-        class="newsletter-form"
-        action="#"
-        method="POST"
-        onsubmit="enviarNewsletter(event)"
-      >
-        <input
-          type="email"
-          class="email-input"
-          placeholder="Digite seu melhor e-mail..."
-          required
-        />
-
-        <button type="submit" class="submit-btn">Acesse Aqui</button>
-      </form>
-
-      <p class="footer-text">
-        Prometemos não enviar spam. Cancele a inscrição a qualquer momento.
-      </p>
-    </div>
-
-    <script>
-      function enviarNewsletter(event) {
-        event.preventDefault(); // Impede a página de recarregar
-        const email = event.target.querySelector(".email-input").value;
-      }
-    </script>
-
-    <i>
-      <h2 class="newsletter-title">FESTIVAL MUSIC <span>RESUMO</span></h2>
-    </i>
-
-    <strong>
-      Um festival eclético abrangendo o público geral, o "Festival Music
-      Project" traz várias atrações nacionais e internacionais para o Espaço
-      Unimed, onde o público pode contar com máxima segurança e conforto, além
-      de aproveitar os shows de artistas como Roberto Carlos, Eminem, Turma do
-      Pagode e Linkin Park. Entre vários outros grandes nomes da música que
-      estarão presentes, levando o público à loucura.
-    </strong>
-
-    <b>
-      <h2 class="newsletter-title">Contatos e Dúvidas</h2>
-    </b>
+  <div class="review">
+    <h3>Maria Oliveira ⭐⭐⭐⭐⭐</h3>
+    <p>
+      Uma plataforma moderna para descobrir eventos e acompanhar os melhores
+      shows.
+    </p>
+  </div>
+</section>
   </body>
 </html>
